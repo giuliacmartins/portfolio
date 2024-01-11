@@ -8,12 +8,12 @@ I will also provide the links to the repositories of the projects below!
 
 *****************************************************************************************************************************************************************************************
 
-Anime Watch List: https://github.com/giuliacmartins/anime-watch-list
+Anime Watch List (2021): https://github.com/giuliacmartins/anime-watch-list
 
-Media Watchlist - USF Independent Study: https://github.com/giuliacmartins/media-watchlist
+Media Watchlist - USF Independent Study (2023): https://github.com/giuliacmartins/media-watchlist
 
-New Pathfinder Interface: https://github.com/giuliacmartins/hci-pathfinder
+New Pathfinder Interface (2023): https://github.com/giuliacmartins/hci-pathfinder
 
-Random Password Generator: https://github.com/giuliacmartins/random-password-generator
+Random Password Generator (2023): https://github.com/giuliacmartins/random-password-generator
 
-iOS To Do List App: https://github.com/giuliacmartins/ios-todo-list-app
+iOS To Do List App (2024): https://github.com/giuliacmartins/ios-todo-list-app
