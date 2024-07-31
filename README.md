@@ -19,3 +19,5 @@ Random Password Generator (2023): https://github.com/giuliacmartins/random-passw
 iOS To Do List App (2024): https://github.com/giuliacmartins/ios-todo-list-app
 
 YouTube For Dog Related Videos (2024): https://github.com/giuliacmartins/dog-youtube-project
+
+Simple Blog (2024): https://github.com/giuliacmartins/roulettech-project
