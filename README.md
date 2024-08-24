@@ -1,8 +1,8 @@
 # Portfolio
 
-Welcome to my portfolio page! The code about is from my website http://giuliamartins.com/ -> if there are any issues viewing the site, I have the link for the GitHub version: https://giuliacmartins.github.io/portfolio/.
+Welcome to my portfolio page! The code above is from my website http://giuliamartins.com/ -> if there are any issues viewing the site, I have the link for the GitHub version: https://giuliacmartins.github.io/portfolio/.
 
-The projects presented go towards different repositories of mine :)
+The projects presented below go towards different repositories of mine :)
 
 I will also provide the links to the repositories of the projects below!
 
