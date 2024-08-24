@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my portfolio page! I provided a zip file containing files to a template website that I used to create my portfolio. Once downloaded, just click on the index file to see the website in action!
+Welcome to my portfolio page! The code about is from my website http://giuliamartins.com/ -> if there are any issues viewing the site, I have the link for the GitHub version.
 
 The projects presented go towards different repositories of mine :)
 
