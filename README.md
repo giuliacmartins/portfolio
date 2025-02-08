@@ -30,4 +30,4 @@ Drum Machine (2025): https://github.com/giuliacmartins/drum-machine
 
 JavaScript Calculator (2025): https://github.com/giuliacmartins/javascript-calculator
 
-25 + 5 Clock (2025): https://github.com/giuliacmartins/portfolio
+25 + 5 Clock (2025): https://github.com/giuliacmartins/25-5-clock
