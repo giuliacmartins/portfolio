@@ -21,3 +21,13 @@ iOS To Do List App (2024): https://github.com/giuliacmartins/ios-todo-list-app
 YouTube For Dog Related Videos (2024): https://github.com/giuliacmartins/dog-youtube-project
 
 Simple Blog (2024): https://github.com/giuliacmartins/roulettech-project
+
+Random Quote Machine (2025): https://github.com/giuliacmartins/random-quote-machine
+
+Markdown Previewer (2025): https://github.com/giuliacmartins/markdown-previewer
+
+Drum Machine (2025): https://github.com/giuliacmartins/drum-machine
+
+JavaScript Calculator (2025): https://github.com/giuliacmartins/javascript-calculator
+
+25 + 5 Clock (2025): https://github.com/giuliacmartins/portfolio
