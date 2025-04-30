@@ -31,3 +31,7 @@ Drum Machine (2025): https://github.com/giuliacmartins/drum-machine
 JavaScript Calculator (2025): https://github.com/giuliacmartins/javascript-calculator
 
 25 + 5 Clock (2025): https://github.com/giuliacmartins/25-5-clock
+
+Tic Tac Toe (2025): https://github.com/giuliacmartins/tic-tac-toe
+
+Meme Generator!!! (2025): https://github.com/giuliacmartins/meme-generator
