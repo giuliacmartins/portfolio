@@ -423,7 +423,6 @@ nav .nav-links li a:hover {
     width: 90%;
     object-fit: cover;
     padding-top: 20px;
-    /* transition: transform 0.3s ease;  */
 }
 
 .project-tile:hover {
@@ -451,6 +450,76 @@ nav .nav-links li a:hover {
     height: 800px;
     bottom: -400px;
     right: -400px;
+}
+
+.first-project-tile {
+    background-color: rgba(101, 181, 255);
+    border-radius: 5px;
+    padding: 20px 15px 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.first-project-tile:hover {
+    transform: scale(1.05);
+}
+
+.first-project-img {
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.first-project-title {
+    font-size: 30px;
+    margin-bottom: 10px; 
+    color: #fff;
+}
+
+.first-project-tile .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 0;
+}
+
+.first-project-tile .btn {
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #e5e5e5;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.first-project-tile .btn:hover {
+    background-color: #013565;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(1, 53, 101, 0.6);
+}
+
+.first-project-tile .btn-website {
+    border-color: #4CAF50;
+}
+
+.first-project-tile .btn-website:hover {
+    background-color: #4CAF50;
+}
+
+.first-project-tile .btn-github {
+    border-color: #24292e;
+}
+
+.first-project-tile .btn-github:hover {
+    background-color: #24292e;
 }
 
 /* footer */
