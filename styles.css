@@ -609,7 +609,8 @@ nav .nav-links li a:hover {
     }
     
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .content {
@@ -680,7 +681,8 @@ nav .nav-links li a:hover {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     footer {
@@ -760,7 +762,8 @@ nav .nav-links li a:hover {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     footer {
