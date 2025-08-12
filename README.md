@@ -38,4 +38,4 @@ Meme Generator!!! (2025): https://github.com/giuliacmartins/meme-generator
 
 Shine to Drive (2025): https://github.com/giuliacmartins/shine-to-drive (https://shinetodrive.net/)
 
-Florida Land Brothers LLC (WordPress): (https://floridalandbrothers.com/)
+Florida Land Brothers LLC (WordPress) (2025): https://floridalandbrothers.com/
