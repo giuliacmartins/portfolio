@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Giulia Martins</title>
+        <title>Giulia Martins | Front-End & Web Developer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Giulia Martins is a Front-End and Web Developer specializing in React, Django, HTML, CSS, JavaScript, and WordPress. Explore her projects, portfolio, and experience in creating responsive, user-focused websites and web applications.">
+        <meta name="keywords" content="Giulia Martins, Web Developer, Front-End Developer, Full-Stack Developer, React, Django, HTML, CSS, JavaScript, WordPress, Portfolio, Web Applications">
+        <meta name="author" content="Giulia Martins">
+        <meta name="robots" content="index, follow">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,264 +17,388 @@
         />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <section id="main" class="gradient-background">
-            <div class="wrapper">
-                <header>
-                    <div class="logo">
-                        <i class="fa-solid fa-g"></i>
+        <header class="dev-nav">
+            <div class="nav-inner">
+                <div class="nav-logo">Giulia Martins</div>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav-tabs">
+                    <a href="#hero" class="tab active">Home</a>
+                    <a href="#about" class="tab">About</a>
+                    <a href="#projects" class="tab">Projects</a>
+                    <a href="#contact" class="tab">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <!-- floating background symbols -->
+            <div id="hero-bg">
+                <span class="bg-symbol" style="left: 5%; font-size:1rem;">&lt;/&gt;</span>
+                <span class="bg-symbol" style="left: 20%; font-size:1.2rem;">{ }</span>
+                <span class="bg-symbol" style="left: 35%; font-size:0.9rem;">const</span>
+                <span class="bg-symbol" style="left: 50%; font-size:1.5rem;">;</span>
+                <span class="bg-symbol" style="left: 65%; font-size:1.1rem;">return</span>
+                <span class="bg-symbol" style="left: 80%; font-size:1rem;">()</span>
+            </div>
+
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <p class="terminal-line">
+                        <span class="prompt">giulia@portfolio</span>:<span class="path">~</span>$ 
+                        <span class="command">whoami</span>
+                    </p>
+
+                    <h1 class="hero-name">Giulia Martins</h1>
+
+                    <p class="hero-role">
+                        <span class="typed"></span>
+                    </p>
+
+                    <p class="hero-desc">
+                        Front-end & web developer focused on building accessible, 
+                        responsive, and thoughtful digital experiences.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn ghost">Contact Me</a>
                     </div>
+                </div>
 
-                    <nav>
-                        <div class="togglebtn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                <div class="hero-visual">
+                    <div class="code-card ide-style">
+                        <div class="ide-header">
+                        <span class="ide-circle red"></span>
+                        <span class="ide-circle yellow"></span>
+                        <span class="ide-circle green"></span>
                         </div>
-
-                        <ul class="nav-links">
-                            <li><a href="#main">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </header>
-
-                <div class="container">
-                    <div class="main-text">
-                        <h5>I am a <span class="input">Front-end Developer</span></h5>
-                        <h1>Giulia Martins</h1>
-                        <p>
-                            I'm a passionate Frontend/Full-Stack/Web Developer eager to embark on my career journey. 
-                            With a strong foundation in HTML, CSS, and JavaScript, I’m excited to bring my skills to new projects and collaborate with innovative teams.
-                        </p>
-                        <div class="btn-group">
-                            <a href="./assets/resume_giuliamartins.pdf" class="btn active" target="_blank">Download CV</a>
-                            <a href="#contact" class="btn">Contact Me</a>
+                        <div class="code-container">
+                        <div class="line-numbers">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7
                         </div>
-                        <div class="socials">
-                            <a href="https://github.com/giuliacmartins" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/giulia-martins-01949123a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/giuliamartinsx/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+    <span class="code-prop">name</span>: <span class="code-string">"Giulia Martins"</span>,
+    <span class="code-prop">stack</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"React"</span>],
+    <span class="code-prop">loves</span>: [<span class="code-string">"UI"</span>, <span class="code-string">"UX"</span>, <span class="code-string">"motion"</span>]
+};
+</code></pre>
                         </div>
-                    </div>
-
-                    <div class="bubbles">
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about-section">
-            <div class="aboutme-container">
-                <div class="circle top-right"></div> 
-                <div class="circle bottom-left"></div>
-                <div class="content">
-                    <div class="content-img">
-                        <img class="me-img" src="./photos/meimg2.jpg" alt="Me">
-                    </div>
-                    <div class="aboutme-text">
-                        <h2 class="aboutme-header">About Me</h2>
+            <div class="about-container">
+
+                <!-- left -->
+                <div class="about-photo reveal-left">
+                    <img src="photos/me-anime.png" alt="Giulia Martins">
+                </div>
+
+                <!-- right -->
+                <div class="about-content">
+
+                    <div class="about-box reveal">
+                        <h3>$ about_me</h3>
                         <p>
-                            Hi! I'm Giulia Martins, a recent Computer Science graduate from the 
-                            University of South Florida. I have been exploring web development since 
-                            my freshman year of high school. I also developed strong skills in HTML, CSS, 
-                            JavaScript, Python, and platforms like Firebase throughout my college careers, and enjoyed taking on new 
-                            challenges and expanding my knowledge. Two standout projects that I have worked on were the New Pathfinder Interface, 
-                            where I co-led the design and development of a user-centric app using React and Figma, and the Media Watch List, 
-                            where I built a website with Django and PostgreSQL to track shows and gather data from free APIs. I'm excited 
-                            to continue pushing my limits in the field of Front-end/Full-Stack/Web Development.
+                        I’m a front-end & web developer with a Computer Science background,
+                        focused on building accessible, responsive, and thoughtful digital
+                        experiences. I enjoy turning complex ideas into clean, intuitive interfaces.
+                        </p>
+                    </div>
+
+                    <div class="about-box reveal">
+                        <h3>$ education</h3>
+                        <p>
+                            Bachelor of Science in Computer Science — University of South Florida  
+                        <br>
+                            GPA: 3.66 / 4.0  
+                        <br>
+                            Specialized coursework in Software Engineering, Data Structures,
+                            Operating Systems, and Program Design.
+                        </p>
+                    </div>
+
+                    <div class="about-box reveal">
+                        <h3>$ skills</h3>
+                        <p>
+                            <strong>Languages & Frameworks:</strong> HTML, CSS, JavaScript, React,
+                            Node.js, Express, Django, Python, C/C++  
+                            <br><br>
+                            <strong>Tools & Platforms:</strong> Git, VSCode, AWS, WordPress,
+                            Firebase, Figma, Bubble.io  
+                            <br><br>
+                            <strong>Databases:</strong> PostgreSQL, MySQL, SQLite
+                        </p>
+                    </div>
+
+                    <div class="about-box reveal">
+                        <h3>$ experience</h3>
+                        <p>
+                            I’ve worked as a Web Developer Intern and Coding Coach, collaborating
+                            with distributed teams, building WordPress and custom web solutions,
+                            and applying Agile workflows while maintaining strong UX/UI standards.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <div class="circle top-left"></div> 
-            <div class="circle bottom-right"></div> 
-            <h3 class="projects-header">My Projects</h2>
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">$ projects</h2>
+
+            <!-- featured -->
+            <div class="featured-projects">
+
+                <article class="project-feature reveal">
+                    <img src="/photos/flblogo.jpeg" alt="Florida Land Brothers website">
+                    <div class="project-body">
+                        <h3>Florida Land Brothers LLC</h3>
+                        <p>
+                            SEO-friendly real estate website built to showcase property listings
+                            and capture qualified leads through streamlined navigation and
+                            optimized contact forms.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>WordPress</span>
+                            <span>CSS</span>
+                            <span>SiteOrigin</span>
+                            <span>SEO</span>
+                        </div>
+
+                        <a href="https://floridalandbrothers.com/" target="_blank" class="project-btn">
+                            Visit Site →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-feature reveal">
+                    <img src="/photos/car_black_bg_logo.png" alt="Shine to Drive website">
+                    <div class="project-body">
+                        <h3>Shine to Drive</h3>
+                        <p>
+                            Responsive website for a car detailing business with mobile-first
+                            design, smooth navigation, and integrated third-party booking to
+                            increase customer engagement.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+
+                        <div class="project-links">
+                        <a href="https://shinetodrive.net/" target="_blank" class="project-btn">
+                            Visit Site →
+                        </a>
+                        <a href="https://github.com/giuliacmartins/shine-to-drive" target="_blank" class="project-btn ghost">
+                            GitHub
+                        </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- other -->
             <div class="projects-grid">
-                <div class="first-project-tile">
-                    <img class="first-project-img" src="./photos/flblogo.jpeg" alt="Florida Land Brothers" />
-                    <p class="first-project-title">Florida Land Brothers LLC</p>
-                    <div class="btn-group">
-                        <a href="https://floridalandbrothers.com/" target="_blank" class="btn btn-website">Visit Website</a>
-                    </div>
-                </div>
-                <div class="first-project-tile">
-                    <img class="first-project-img" src="./photos/car_black_bg_logo.png" alt="Shine to Drive" />
-                    <p class="first-project-title">Shine to Drive</p>
-                    <div class="btn-group">
-                        <a href="https://shinetodrive.net/" target="_blank" class="btn btn-website">Visit Website</a>
-                        <a href="https://github.com/giuliacmartins/shine-to-drive" target="_blank" class="btn btn-github">GitHub Repo</a>
-                    </div>
-                </div>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/dog-youtube-project" target="_blank">
-                    <img class="projects-img" src="./photos/youtubeclone.png" alt="YouTube Clone">
-                    <p class="project-title">YouTube Clone For Dog Related Videos</p>
+
+                <a href="https://github.com/giuliacmartins/dog-youtube-project" target="_blank" class="project-mini reveal">
+                    <h4>YouTube Clone (Dog Videos)</h4>
+                    <p>React app using Google API with search and playback.</p>
+                    <span class="mini-tags">React • API • CSS</span>
                 </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/media-watchlist" target="_blank">
-                    <img class="projects-img" src="./photos/mediaphoto.png" alt="USF Independent Study Project">
-                    <p class="project-title">USF Independent Study Project: Media Watchlist</p>
+
+                <a href="https://github.com/giuliacmartins/media-watchlist" target="_blank" class="project-mini reveal">
+                    <h4>Media Watchlist</h4>
+                    <p>Independent study project for tracking media consumption.</p>
+                    <span class="mini-tags">Django • CSS • API</span>
                 </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/hci-pathfinder" target="_blank">
-                    <img class="projects-img" src="./photos/pathfinderphoto.png" alt="New Pathfinder Interface">
-                    <p class="project-title">New Pathfinder Interface</p>
+
+                <a href="https://github.com/giuliacmartins/hci-pathfinder" target="_blank" class="project-mini reveal">
+                    <h4>Pathfinder Interface</h4>
+                    <p>Improved UI for navigation and user flow.</p>
+                    <span class="mini-tags">HCI • UI • React</span>
                 </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/roulettech-project" target="_blank">
-                    <img class="projects-img" src="./photos/simpleblog.png" alt="Simple Blog">
-                    <p class="project-title">Simple Blog</p>
+
+                <a href="https://github.com/giuliacmartins/random-password-generator" target="_blank" class="project-mini reveal">
+                    <h4>Password Generator</h4>
+                    <p>Secure random password generation tool.</p>
+                    <span class="mini-tags">React</span>
                 </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/ios-todo-list-app" target="_blank">
-                    <img class="projects-img" src="./photos/todophoto.png" alt="iOS ToDo List App">
-                    <p class="project-title">iOS To Do List</p>
+
+                <a href="https://github.com/giuliacmartins/ios-todo-list-app" target="_blank" class="project-mini reveal">
+                    <h4>iOS To-Do List</h4>
+                    <p>Native task management app.</p>
+                    <span class="mini-tags">Swift • iOS</span>
                 </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/random-password-generator" target="_blank">
-                    <img class="projects-img" src="./photos/passwordphoto.png" alt="Random Password Generator">
-                    <p class="project-title">Random Password Generator</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/random-quote-machine" target="_blank">
-                    <img class="projects-img" src="./photos/rqm_ss.png" alt="Random Quote Machine">
-                    <p class="project-title">Random Quote Machine</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/markdown-previewer" target="_blank">
-                    <img class="projects-img" src="./photos/mp_ss.png" alt="Markdown Previewer">
-                    <p class="project-title">Markdown Previewer</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/drum-machine" target="_blank">
-                    <img class="projects-img" src="./photos/dm_ss.png" alt="Drum Machine">
-                    <p class="project-title">Drum Machine</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/javascript-calculator" target="_blank">
-                    <img class="projects-img" src="./photos/js_calc_ss.png" alt="JavaScript Calculator">
-                    <p class="project-title">JavaScript Calculator</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/25-5-clock" target="_blank">
-                    <img class="projects-img" src="./photos/25-5_clock_ss.png" alt="25 + 5 Clock">
-                    <p class="project-title">25 + 5 Clock</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/tic-tac-toe" target="_blank">
-                    <img class="projects-img" src="./photos/tic_tac_toe.png" alt="Tic Tac Toe">
-                    <p class="project-title">Tic Tac Toe</p>
-                </a>
-                <a id="profile-link" class="project-tile" href="https://github.com/giuliacmartins/meme-generator" target="_blank">
-                    <img class="projects-img" src="./photos/meme_generator.png" alt="Meme Generator">
-                    <p class="project-title">Meme Generator!!!</p>
+
+                <a href="https://github.com/giuliacmartins/javascript-calculator" target="_blank" class="project-mini reveal">
+                    <h4>JavaScript Calculator</h4>
+                    <p>Fully functional calculator app.</p>
+                    <span class="mini-tags">React</span>
                 </a>
             </div>
         </section>
 
-        <footer id="footer" class="gradient-background">
-            <div id="contact">
-                <div class="contact-container">
-                    <p class="contact-sub">Contact me through my socials!</p>
-                    <a id="profile-link" href="https://github.com/giuliacmartins" target="_blank" class="btn contact-details">
+        <footer id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">$ contact</h2>
+
+                <div class="contact-links">
+                    <a href="https://github.com/giuliacmartins" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a id="profile-link" href="https://www.linkedin.com/in/giulia-martins-01949123a" target="_blank" class="btn contact-details">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    <a href="https://www.linkedin.com/in/giulia-martins-01949123a/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="mailto:giulia@ajmartins.com" class="btn contact-details">
-                        <i class="fas fa-at"></i> Email Me
+                    <a href="assets/resume_giuliamartins.pdf" target="_blank">
+                        <i class="fas fa-file-alt"></i> Resume
                     </a>
-                    <a href="tel:954-702-2690" class="btn contact-details">
-                        <i class="fas fa-mobile-alt"></i> Call Me: 954-702-2690
+                    <a href="tel:9547022690">
+                        <i class="fas fa-phone"></i> (954) 702-2690
+                    </a>
+                    <a href="mailto:giulia@ajmartins.com">
+                        <i class="fas fa-envelope"></i> giulia@ajmartins.com
                     </a>
                 </div>
-            </div>
-            
-            <div class="mart">
-                <p>Powered by <a href="martstudios.html" target="_blank">mArtStudios</a></p> 
-                <p>&copy; Giulia Martins. All rights reserved.</p>
+
+                <p class="footer-note">
+                    &copy; 2026 Giulia Martins. All rights reserved.
+                </p>
             </div>
         </footer>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
-            integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script>
+            new Typed(".typed", {
+                strings: [
+                "Frontend Developer",
+                "Web Developer",
+                "UI / UX Enthusiast"
+                ],
+                typeSpeed: 40,
+                backSpeed: 25,
+                loop: true
+            });
+        </script>
 
         <script>
-            var togglebtn = document.querySelector(".togglebtn");
-            var nav = document.querySelector(".nav-links");
-            var links = document.querySelector(".nav-links li");
+            const reveals = document.querySelectorAll(".reveal, .reveal-left");
 
-            togglebtn.addEventListener("click", function() {
-                this.classList.toggle("click");
-                nav.classList.toggle("open");
-            })
+            const observer = new IntersectionObserver(
+                entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
+                    }
+                });
+                },
+                { threshold: 0.2 }
+            );
 
-            var typed = new Typed(".input", {
-                strings: ["Frontend Developer", "Web Developer", "UI/UX Designer", "Full-Stack Developer"],
-                typedSpeed: 40,
-                backSpeed: 45,
-                loop: true,
-            });
-
-            window.addEventListener("scroll", function() {
-                var header = document.querySelector("header");
-                var mainSection = document.getElementById("main");
-                var mainHeight = mainSection.offsetHeight;
+            reveals.forEach(el => observer.observe(el));
+        </script>  
         
-                if (window.scrollY > mainHeight) {
-                    header.classList.add("scrolled");
-                } else {
-                    header.classList.remove("scrolled");
-                }
-            });
+        <script>
+            const heroBg = document.getElementById("hero-bg");
+            const symbols = ["< />", "{ }", "const", ";", "return", "()", "let", "var"];
 
-            window.addEventListener("scroll", function() {
-                var header = document.querySelector("header");
-                var navLinks = document.querySelectorAll("nav .nav-links li a");
-            
-                if (window.scrollY > 0) {
-                    header.classList.add("scrolled");
-                    navLinks.forEach(link => {
-                        link.classList.add("scrolled-link");
+            const colors = [
+            "rgba(56, 189, 248, 0.2)",  // light blue
+            "rgba(45, 212, 191, 0.2)",  // teal
+            "rgba(74, 222, 128, 0.2)",  // green
+            "rgba(229, 231, 235, 0.15)", // light gray
+            "rgba(250, 204, 21, 0.15)"  // yellow accent
+            ];
+
+            const totalSymbols = 25;
+
+            for (let i = 0; i < totalSymbols; i++) {
+                const span = document.createElement("span");
+                span.className = "bg-symbol";
+                span.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                
+                span.style.left = Math.random() * 100 + "%";
+
+                span.style.fontSize = (Math.random() * 1.2 + 0.8) + "rem";
+ 
+                span.style.color = colors[Math.floor(Math.random() * colors.length)];
+                
+                const duration = Math.random() * 15 + 10; 
+                const delay = Math.random() * 10;
+                span.style.animationDuration = duration + "s";
+                span.style.animationDelay = delay + "s";
+
+                heroBg.appendChild(span);
+            }
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const tabs = document.querySelectorAll(".tab");
+                const sections = document.querySelectorAll("section");
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const id = entry.target.getAttribute("id");
+
+                                tabs.forEach(tab => {
+                                    tab.classList.toggle(
+                                        "active",
+                                        tab.getAttribute("href") === `#${id}`
+                                    );
+                                });
+                            }
+                        });
+                    },
+                    {
+                        root: null,
+                        rootMargin: "-40% 0px -50% 0px",
+                        threshold: 0
+                    }
+                );
+
+                sections.forEach(section => observer.observe(section));
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const toggle = document.querySelector(".nav-toggle");
+                const nav = document.querySelector(".nav-tabs");
+                const tabs = document.querySelectorAll(".tab");
+
+                toggle.addEventListener("click", () => {
+                    toggle.classList.toggle("open");
+                    nav.classList.toggle("open");
+                });
+
+                // Close menu when clicking a link
+                tabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                        toggle.classList.remove("open");
+                        nav.classList.remove("open");
                     });
-                } else {
-                    header.classList.remove("scrolled");
-                    navLinks.forEach(link => {
-                        link.classList.remove("scrolled-link");
-                    });
-                }
+                });
             });
-
-            ScrollReveal({
-                reset: false,
-                distance: '60px',
-                duration: 2500,
-                delay: 400
-            });
-
-            ScrollReveal().reveal('.about-section .me-img', { delay: 400, origin: 'bottom' });
-            ScrollReveal().reveal('.aboutme-text', { delay: 400, origin: 'top' });
-            ScrollReveal().reveal('.main-text, .projects-header, .contact-sub', { delay: 400, origin: 'left' });
-            ScrollReveal().reveal('.socials i, .contact-container a', { delay: 600, origin: 'bottom', interval: 300 });
-            ScrollReveal().reveal('.project-tile', { delay: 400, origin: 'bottom', interval: 100 });
-            ScrollReveal().reveal('.first-project-tile', { delay: 400, origin: 'bottom', interval: 100 });
-            ScrollReveal().reveal('.mart p', { delay: 400, origin: 'right' });
         </script>
     </body>
 </html>
