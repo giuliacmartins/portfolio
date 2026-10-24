@@ -22,15 +22,26 @@ html, body {
     color: #e5e7eb;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-wrapper {
+    width: 100%;                 /* FIX: don't size to content inside flex #hero */
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 1.5rem;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);   /* FIX: allow columns to shrink */
     gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* FIX: let grid children shrink below their content size */
+.hero-content,
+.hero-visual {
+    min-width: 0;
 }
 
 .terminal-line {
@@ -109,12 +120,18 @@ html, body {
     justify-content: center;
 }
 
+/* code card (single merged rule) */
+
 .code-card {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(15, 23, 42, 0.85);
     border: 1px solid #1e293b;
     border-radius: 12px;
+    color: #9ca3af;
+    text-align: left;            /* FIX: don't inherit center alignment on mobile */
     box-shadow: 0 0 40px rgba(45, 212, 191, 0.15);
     backdrop-filter: blur(12px);
+    animation: float-card 6s ease-in-out infinite; 
+    will-change: transform; 
 }
 
 .code-keyword {
@@ -142,8 +159,9 @@ html, body {
     background: rgba(15, 23, 42, 0.9);
     border: 1px solid #1e293b;
     border-radius: 12px;
-    padding: 0;
+    padding: 0;                  /* FIX: no longer overridden by .code-card */
     width: 100%;
+    min-width: 0;                /* FIX: allow card to shrink so code scrolls inside */
     max-width: 700px;
     box-shadow: 0 0 40px rgba(45, 212, 191, 0.15);
     backdrop-filter: blur(12px);
@@ -197,11 +215,6 @@ html, body {
 
 /* floating symbols in hero background */
 
-#hero {
-    position: relative;
-    overflow: hidden;
-}
-
 #hero-bg {
     position: absolute;
     top: 0;
@@ -236,11 +249,6 @@ html, body {
     }
 }
 
-.hero-wrapper {
-    position: relative;
-    z-index: 1;
-}
-
 /* floating animation for the code card */
 
 @keyframes float-card {
@@ -249,18 +257,6 @@ html, body {
     50% { transform: translateY(0px) rotate(0deg); }
     75% { transform: translateY(8px) rotate(1deg); }
     100% { transform: translateY(0px) rotate(0deg); }
-}
-
-.code-card {
-    background: rgba(15, 23, 42, 0.85);
-    border: 1px solid #1e293b;
-    border-radius: 12px;
-    padding: 1.5rem;
-    color: #9ca3af;
-    box-shadow: 0 0 40px rgba(45, 212, 191, 0.15);
-    backdrop-filter: blur(12px);
-    animation: float-card 6s ease-in-out infinite; 
-    will-change: transform; 
 }
 
 /* nav section */
@@ -513,17 +509,6 @@ html, body {
     color: #22c55e;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* footer/contact section */
 
 .contact-section {
@@ -608,7 +593,7 @@ html, body {
     }
 
     .hero-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);   /* FIX: was 1fr */
         text-align: center;
         gap: 3.5rem;
     }
@@ -651,7 +636,7 @@ html, body {
 
     /* ABOUT */
     .about-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);   /* FIX: was 1fr */
         gap: 3rem;
         text-align: center;
     }
